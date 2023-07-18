@@ -1,0 +1,137 @@
+@font-face {
+    font-family: myfont;
+    src: url(../fonts/VNI_THUPHAP.TTF);
+}
+
+header {
+    background: linear-gradient(blue, white);
+}
+
+.subject {
+    font-family: myfont;
+}
+
+.flex {
+    display: flex;
+   
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 1rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.ads > div {
+    border: 1.5px dashed darkblue;
+    padding: 2.5rem 0.2rem;
+    margin: 0.1rem;
+}
+
+input[type=text] {
+    padding: 0.2rem;
+}
+
+/* NAV */
+ul.menu {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    background: lightgreen;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1rem;
+    border-right: 1px solid darkblue;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background: darkblue;
+    color: white;
+}
+
+/* MAIN */
+.left {
+    width: 20%;
+}
+
+.right {
+    width: 80%;
+}
+
+.v-menu {
+    flex-direction: column;
+}
+
+.v-menu > li {
+    width: 100%;
+}
+
+.v-menu > li > a {
+    border-right: none !important;
+    background: linear-gradient(lightblue, white);
+}
+
+/* CONTENT */
+.books {
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 20%;
+    text-align: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.book img {
+    width: 100%;
+}
+
+.des {
+    background-color: rgb(0, 0, 255, 0.6);
+    color:gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    padding: 0;
+    list-style-type: none;
+    transition: bottom 1s;
+    overflow: hidden;
+}
+
+.book:hover .des {
+    bottom: 0;
+}
+
+.social {
+    background-color: aquamarine;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 999;
+    padding: 0;
+    
+}
+
+.social > li {
+    margin-right: -50px;
+    transition: margin-right 1s;
+}
+
+.social > li:hover {
+    margin-right: 0;
+}
+

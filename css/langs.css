@@ -1,0 +1,124 @@
+:root {
+    --myspace: 0.5rem;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subject {
+    text-transform: uppercase;
+    text-align: center;
+    color: gold;
+    text-shadow: 3px 4px 3px red;
+    font-size: 3rem;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+    display: flex;
+}
+
+ul.menu > li {
+    border-left: 1px solid blue;
+    min-width: 10%;
+    text-align: center;
+}
+
+ul.menu > li:first-child {
+    border-left: none;
+}
+
+ul.menu > li:last-child {
+    margin-left: auto;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.submenu {
+    /* display: none !important; */
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    min-width: 10%;
+    transition: opacity 0.5s;
+    display: block !important;
+}
+
+.sub:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    /* display: block !important; */
+}
+
+.submenu > li {
+    border-left: none !important;
+}
+
+.col1 {
+    width: 10%;
+}
+
+.col2 {
+    width: 90%;
+}
+
+.langs {
+    background-color: bisque;
+    margin-top: var(--myspace);
+}
+
+.lang {
+    display: flex;
+    border-bottom: 1px solid blue;
+}
+
+.lang:last-child {
+    border-bottom: none;
+}
+
+.lang > div {
+    padding: var(--myspace);
+}
+
+.lang img {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.lang img:hover {
+    transform: rotate(30deg);
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: var(--myspace);
+    overflow: hidden;
+}
+
+footer > span {
+    position: relative;
+    animation: move 10s infinite;
+}
