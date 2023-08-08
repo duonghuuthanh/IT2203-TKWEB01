@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Demo</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bai03.js"></script>
+    <link rel="stylesheet" href="css/jquerydemo.css" />
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Số tiền</td>
+            <td><input type="number" name="" id="stId" /></td>
+        </tr>
+        <tr>
+            <td>Đơn vị</td>
+            <td>
+                <select name="" id="dvId">
+                    <option value="usd">USD</option>
+                    <option value="aud">AUD</option>
+                    <option value="aur">EUR</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Đổi tiền" id="btnDoiTien" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="kq">...</td>
+        </tr>
+    </table>
+
+    <div>
+        <ul class="tab">
+            <li class="active"><a href="#tab01">TAB 01</a></li>
+            <li><a href="#tab02">TAB 02</a></li>
+            <li><a href="#tab03">TAB 03</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="tab01">TAB CONTENT 0001</div>
+            <div id="tab02">TAB CONTENT 0002</div>
+            <div id="tab03">TAB CONTENT 0003</div>
+        </div>
+    </div>
+    
+    <div class="slider">
+        <div class="slider-content">
+            <div><img src="images/slider/slider1.webp" alt=""></div>
+            <div><img src="images/slider/slider2.webp" alt=""></div>
+            <div><img src="images/slider/slider3.webp" alt=""></div>
+            <div><img src="images/slider/slider4.webp" alt=""></div>
+            <div><img src="images/slider/slider5.webp" alt=""></div>
+        </div>
+        <div class="slider-button">
+            <button class="prev">&lt;&lt;</button>
+            
+            <button class="next">&gt;&gt;</button>
+        </div>
+    </div>
+</body>
+</html>
